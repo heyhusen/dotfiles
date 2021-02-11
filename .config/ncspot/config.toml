@@ -1,0 +1,7 @@
+volnorm = true
+notify = true
+gapless = true
+
+[saved_state]
+repeat = "playlist"
+shuffle = true
