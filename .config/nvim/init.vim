@@ -19,7 +19,8 @@ Plug 'editorconfig/editorconfig-vim'
 " Git
 Plug 'tpope/vim-fugitive'
 
-" coc.nvim
+" Dev
+Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
@@ -34,34 +35,33 @@ set fileencoding=utf-8
 set fileencodings=utf-8
 
 "" General
-set number	                        "" Show line numbers
-" set numberwidth=5
-set linebreak	                        "" Break lines at word (requires Wrap lines)
-set showbreak=+++ 	                "" Wrap-broken line prefix
-set textwidth=80	                "" Line wrap (number of cols)
-set showmatch	                        "" Highlight matching brace
+set number															"" Show line numbers
+set linebreak														"" Break lines at word (requires Wrap lines)
+set showbreak=+++												"" Wrap-broken line prefix
+set textwidth=80												"" Line wrap (number of cols)
+set showmatch														"" Highlight matching brace
 set visualbell	                        "" Use visual bell (no beeping)
 
 "" Searching
-set hlsearch	                        "" Highlight all search results
-set smartcase	                        "" Enable smart-case search
+set hlsearch														"" Highlight all search results
+set smartcase														"" Enable smart-case search
 set ignorecase	                        "" Always case-insensitive
-set incsearch	                        "" Searches for strings incrementally
+set incsearch														"" Searches for strings incrementally
 
 "" Format
 set autoindent	                        "" Auto-indent new lines
-set shiftwidth=4	              	"" Number of auto-indent spaces
+set shiftwidth=4												"" Number of auto-indent spaces
 set smartindent	                        "" Enable smart-indent
-set smarttab	                        "" Enable smart-tabs
-set softtabstop=4			"" Number of spaces per Tab
+set smarttab														"" Enable smart-tabs
+set softtabstop=4												"" Number of spaces per Tab
 
 "" Advanced
-set autowrite				"" Automatically :write before running commands
-set ruler	                        "" Show row and column ruler information
+set autowrite														"" Automatically :write before running commands
+set ruler																"" Show row and column ruler information
 
 "" Undo & Delete
-set undolevels=1000	                "" Number of undo levels
-set backspace=indent,eol,start      	"" Backspace behaviour
+set undolevels=1000											"" Number of undo levels
+set backspace=indent,eol,start					"" Backspace behaviour
 
 " Visual
 set noshowmode
@@ -131,6 +131,7 @@ let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange
 let g:NERDTreePatternMatchHighlightColor = {} 
 " " Sets the color for files ending with _spec.rb
 let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red 
+
 " " Sets the color for folders that did not match any rule
 let g:WebDevIconsDefaultFolderSymbolColor = s:beige 
 " " Sets the color for files that did not match any rule
@@ -169,6 +170,7 @@ let g:lightline = {
 let g:coc_user_config = {}
 let g:coc_global_extensions = [
     \ 'coc-css',
+		\ 'coc-docker',
     \ 'coc-emmet',
     \ 'coc-go',
     \ 'coc-highlight',
