@@ -1,4 +1,4 @@
-volnorm = true
+volnorm = false
 notify = true
 gapless = true
 
