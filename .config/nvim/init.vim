@@ -13,6 +13,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'airblade/vim-rooter'
+
 " Fuzzy Finder/FZH
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -61,6 +63,7 @@ set shortmess+=c
 set undolevels=1000											"" Number of undo levels
 set backspace=indent,eol,start					"" Backspace behaviour
 set noshowmode
+set switchbuf=usetab,newtab
 set signcolumn=number
 set termguicolors
 
@@ -80,6 +83,8 @@ let mapleader='\'
 :nmap <silent> <C-k> :wincmd k<CR>
 :nmap <silent> <C-l> :wincmd l<CR>
 
+" Switch between the last two files
+nnoremap <Leader><Leader> <C-^>
 
 " NERDTree
 let g:NERDTreeShowHidden = 1 
