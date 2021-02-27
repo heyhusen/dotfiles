@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'editorconfig/editorconfig-vim'		" EditorConfig
 Plug 'tpope/vim-fugitive'								" Git
+Plug 'preservim/nerdcommenter'					" NERD Commenter
 
 " Dev
 Plug 'sheerun/vim-polyglot'
@@ -170,6 +171,23 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+
+" Nerd Commenter
+" " Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" " Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" " Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" " Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+" " Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" " Map ++ to call NERD Commenter and use iTerm key bindings 
+" " to bind Ctmd+/ to ++
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
 
 
 " COC
