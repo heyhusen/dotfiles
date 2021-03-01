@@ -19,6 +19,7 @@ Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+Plug 'Yggdroot/indentLine'
 Plug 'editorconfig/editorconfig-vim'		" EditorConfig
 Plug 'tpope/vim-fugitive'								" Git
 Plug 'preservim/nerdcommenter'					" NERD Commenter
@@ -167,6 +168,10 @@ let g:lightline = {
     \ },
     \ }
 
+
+" Indentline
+let g:indentLine_setColors = 0
+let g:indentLine_showFirstIndentLevel = 1
 
 " Fuzzy Finder/FZH
 nnoremap <C-p> :GFiles<CR>
