@@ -1,0 +1,217 @@
+/* Import Nord Css */
+
+@import 'css/nord.css';
+
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Arimo Nerd Font", sans-serif;
+		font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @nord4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+window#waybar .modules-left {
+		margin: 5px 5px 0 5px;
+}
+
+window#waybar .modules-center {
+		margin-top: 5px;
+		font-size: 11px;
+		color: @nord6;
+}
+
+window#waybar .modules-right {
+		margin: 5px 5px 0 5px;
+}
+
+#workspaces {
+		margin: 0 0 0 10px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: @nord10;
+    color: @nord4;
+    /* Use box-shadow instead of border so the text isn't offset */
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: alpha(@nord0, 0.7);
+		color: @nord4;
+}
+
+#workspaces button.focused {
+    background-color: @nord4;
+		color: @nord3;
+}
+
+#workspaces button.urgent {
+    background-color: @error_color;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#tray {
+		margin-right: 10px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#mode,
+#idle_inhibitor,
+#mpd {
+		background: @nord1;
+    color: @nord4;
+		padding: 0 7px;
+}
+
+#pulseaudio {
+		padding-left: 7px;
+}
+
+#backlight {
+		padding-right: 10px;
+		border-radius: 0 10px 10px 0;
+}
+
+#network {
+		padding-left: 10px;
+		border-radius: 10px 0 0 10px;
+}
+
+#clock {
+		padding-right: 7px;
+}
+
+#custom-media {
+		font-size: 11px;
+		padding: 0 7px;
+		color: shade(@nord14, 1.25);
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#battery.charging {
+    color: @nord14;
+}
+
+@keyframes blink {
+    to {
+        color: @nord0;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @nord11;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: @nord3;
+}
+
+#network.disconnected {
+    color: @nord11;
+}
+
+#pulseaudio.muted {
+    color: #ebcb8b;
+}
+
+#custom-media.custom-spotify {
+    background-color: @nord14
+}
+
+#custom-media.custom-vlc {
+    background-color: @nord12;
+}
+
+#temperature.critical {
+    color: @nord11;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
