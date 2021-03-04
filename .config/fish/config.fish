@@ -1,3 +1,6 @@
+# Remove greeting message
+set -U fish_greeting
+
 # Set PATH
 set -x GOROOT /usr/lib/go
 set -x GOPATH $HOME/go
