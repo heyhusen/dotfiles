@@ -19,3 +19,5 @@ set -g theme_date_timezone Asia/Jakarta
 set -g theme_powerline_fonts yes
 set -g theme_display_git yes
 set -g theme_newline_cursor clean
+
+set -gx GPG_TTY (tty)
