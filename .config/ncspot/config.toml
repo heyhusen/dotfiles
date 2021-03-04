@@ -7,7 +7,6 @@ repeat = "playlist"
 shuffle = true
 
 [theme]
-background = "black"
 primary = "light white"
 secondary = "light black"
 title = "green"
