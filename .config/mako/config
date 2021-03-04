@@ -1,0 +1,6 @@
+default-timeout=5000
+background-color=#4c566a
+font=Noto Sans Reguler 9
+border-size=0
+border-radius=5
+padding=5,8,5
