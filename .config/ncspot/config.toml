@@ -1,8 +1,6 @@
+use_nerdfont = true
 volnorm = false
 notify = true
 gapless = true
-
-[saved_state]
 repeat = "playlist"
 shuffle = true
-
