@@ -156,19 +156,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ }
 
 
-" Lightline
-let g:lightline = {
-    \ 'colorscheme': 'tokyonight',
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-    \ },
-    \ 'component_function': {
-    \   'gitbranch': 'FugitiveHead'
-    \ },
-    \ }
-
-
 " Indentline
 let g:indentLine_setColors = 0
 let g:indentLine_showFirstIndentLevel = 1
@@ -352,3 +339,21 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
+" Lightline
+let g:lightline = {
+		\ 'colorscheme': 'tokyonight',
+		\ 'active': {
+		\   'left': [ [ 'mode', 'paste' ],
+		\             [ 'gitbranch', 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+		\ },
+		\ 'component_function': {
+		\   'gitbranch': 'FugitiveHead',
+		\   'cocstatus': 'coc#status',
+		\   'currentfunction': 'CocCurrentFunction'
+		\ },
+		\ }
