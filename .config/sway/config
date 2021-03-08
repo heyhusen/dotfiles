@@ -247,7 +247,7 @@ bar {
 # MPRIS controll
 #
 bindsym Mod4+Control+p exec playerctl play-pause
-bindsym Mod4+Control+Left playerctl previous
+bindsym Mod4+Control+Left exec playerctl previous
 bindsym Mod4+Control+Right exec playerctl next
 
 #
