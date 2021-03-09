@@ -1,3 +1,5 @@
+let g:ale_disable_lsp = 1
+
 "*****************************************************************************
 "" Plugin manager
 "*****************************************************************************"
@@ -27,6 +29,8 @@ Plug 'preservim/nerdcommenter'					" NERD Commenter
 " Dev
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
+Plug 'maximbaz/lightline-ale'
 
 call plug#end()
 
@@ -340,16 +344,45 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+
+" ALE (Asynchronous Lint Engine)
+let g:ale_fixers = {
+ \ 'javascript': ['eslint']
+ \ }
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fix_on_save = 1
+
+
 function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
 
+
 " Lightline
 let g:lightline = {
 		\ 'colorscheme': 'tokyonight',
+		\ 'component_expand': {
+		\		'linter_checking': 'lightline#ale#checking',
+		\		'linter_infos': 'lightline#ale#infos',
+		\		'linter_warnings': 'lightline#ale#warnings',
+		\		'linter_errors': 'lightline#ale#errors',
+		\		'linter_ok': 'lightline#ale#ok',
+		\ },
+		\ 'component_type': {
+		\		'linter_checking': 'right',
+		\   'linter_infos': 'right',
+		\   'linter_warnings': 'warning',
+		\   'linter_errors': 'error',
+		\   'linter_ok': 'right',
+		\ },
 		\ 'active': {
-		\   'left': [ [ 'mode', 'paste' ],
-		\             [ 'gitbranch', 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+		\   'left':	[ [ 'mode', 'paste' ],
+		\             [ 'gitbranch', 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ],
+		\		'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ],
+		\						   [ 'percent' ],
+		\						   [ 'lineinfo' ],
+		\              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
 		\ },
 		\ 'component_function': {
 		\   'gitbranch': 'FugitiveHead',
@@ -357,3 +390,9 @@ let g:lightline = {
 		\   'currentfunction': 'CocCurrentFunction'
 		\ },
 		\ }
+
+let g:lightline#ale#indicator_checking = "\uf110"
+let g:lightline#ale#indicator_infos = "\uf129"
+let g:lightline#ale#indicator_warnings = "\uf071"
+let g:lightline#ale#indicator_errors = "\uf05e"
+let g:lightline#ale#indicator_ok = "\uf00c"
