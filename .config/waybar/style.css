@@ -41,17 +41,17 @@ window#waybar.chromium {
 }
 
 window#waybar .modules-left {
-		margin: 5px 5px 0 5px;
+		margin-right: 5px;
 }
 
 window#waybar .modules-center {
-		margin-top: 5px;
+		margin: 0 5px;
 		font-size: 11px;
 		color: @nord6;
 }
 
 window#waybar .modules-right {
-		margin: 5px 5px 0 5px;
+		margin-left: 5px;
 }
 
 #workspaces {
