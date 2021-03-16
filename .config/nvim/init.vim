@@ -97,7 +97,7 @@ let g:NERDTreeMinimalUI = 1 " hide helper
 let g:NERDTreeIgnore = ['^node_modules$'] " ignore node_modules to increase load speed 
 let g:NERDTreeStatusline = '' " set to empty to use lightline
 " " Toggle
-noremap <silent> <C-b> :NERDTreeToggle<CR>
+noremap <silent> <C-d> :NERDTreeToggle<CR>
 " " Close window if NERDTree is the last one
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " " Map to open current file in NERDTree and set size
