@@ -61,3 +61,6 @@ cmd 'colorscheme zephyr'
 -- Configs
 require('config')
 
+
+-- Key mappings
+require('keymappings')
