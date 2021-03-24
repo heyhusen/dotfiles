@@ -63,4 +63,4 @@ require('config')
 
 
 -- Key mappings
-require('keymappings')
+require('keymaps')
