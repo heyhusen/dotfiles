@@ -10,6 +10,7 @@ paq 'kyazdani42/nvim-tree.lua'
 paq 'nvim-lua/popup.nvim'
 paq 'nvim-lua/plenary.nvim'
 paq 'nvim-telescope/telescope.nvim'
+paq 'akinsho/nvim-bufferline.lua'
 paq 'norcalli/nvim-colorizer.lua'
 
 local plugin_path = vim.fn.stdpath("data") .. "/site/pack/paqs"

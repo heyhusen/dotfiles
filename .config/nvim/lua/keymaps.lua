@@ -16,3 +16,8 @@ map('n', '<leader>fg', '<cmd>Telescope git_files<cr>')
 map('n', '<leader>fl', '<cmd>Telescope live_grep<cr>')
 map('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 map('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
+map('n', '<C-p>', '<cmd>Telescope git_files<cr>')
+
+-- nvim-bufferline
+map('n', '<silent>[b', ':BufferLineCycleNext<CR>')
+map('n', '<silent>b]', ':BufferLineCyclePrev<CR>')

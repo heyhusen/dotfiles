@@ -23,6 +23,7 @@ cmd 'syntax enable'
 cmd 'filetype plugin indent on'
 opt('b', 'fileencoding', 'utf-8')
 opt('o', 'fileencodings', 'utf-8')
+opt('o', 'mouse', 'a')
 opt('w', 'number', true)
 opt('w', 'number', true)
 opt('w', 'linebreak', true)
