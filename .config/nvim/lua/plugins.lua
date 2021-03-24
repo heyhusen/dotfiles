@@ -7,6 +7,9 @@ paq 'glepnir/zephyr-nvim'
 paq 'kyazdani42/nvim-web-devicons'
 paq 'yamatsum/nvim-web-nonicons'
 paq 'kyazdani42/nvim-tree.lua'
+paq 'nvim-lua/popup.nvim'
+paq 'nvim-lua/plenary.nvim'
+paq 'nvim-telescope/telescope.nvim'
 paq 'norcalli/nvim-colorizer.lua'
 
 local plugin_path = vim.fn.stdpath("data") .. "/site/pack/paqs"
