@@ -26,7 +26,10 @@ set $menu wofi --show drun --allow-images --no-actions | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.config/sway/img/Nordic-wallpaper.jpg fill
+output * {
+    resolution 1366x768
+    bg ~/.config/sway/img/Nordic-wallpaper.jpg fill
+}
 #
 # Example configuration:
 #
@@ -34,14 +37,14 @@ output * bg ~/.config/sway/img/Nordic-wallpaper.jpg fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-### Appereance
+### Styling
 # Set GTK theme
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Nordic-Polar'
     gsettings set org.gnome.desktop.wm.preferences theme 'Nordic-Polar'
-		gsettings set $gnome-schema icon-theme 'Fluent-orange-dark'
+    gsettings set $gnome-schema icon-theme 'Fluent-orange-dark'
     gsettings set $gnome-schema cursor-theme 'Adwaita'
     gsettings set $gnome-schema font-name 'Noto Sans 9'
 }
@@ -52,6 +55,7 @@ font pango:Noto Sans Reguler 12
 # Gaps
 gaps inner 5
 gaps outer 0
+# Colors
 
 ### Windows
 ##
@@ -268,5 +272,8 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
 
 exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
+
+# Gammastep
+exec gammastep-indicator
 
 include /etc/sway/config.d/*
