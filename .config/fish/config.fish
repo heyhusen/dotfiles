@@ -1,6 +1,7 @@
 # Remove greeting message
 set -U fish_greeting
 
+
 # Set PATH
 set -x GOROOT /usr/lib/go
 set -x GOPATH $HOME/go
@@ -21,4 +22,6 @@ set -g theme_display_git yes
 set -g theme_newline_cursor clean
 set -g theme_display_git_default_branch yes
 
+
+# GPG TTY
 set -gx GPG_TTY (tty)
