@@ -6,7 +6,7 @@ set -U fish_greeting
 set -x GOROOT /usr/lib/go
 set -x GOPATH $HOME/go
 
-set -x PATH $PATH $GOROOT/bin $GOPATH/bin $HOME/.node_modules/bin
+set -x PATH $PATH $GOROOT/bin $GOPATH/bin $HOME/.node_modules/bin $HOME/.config/composer/vendor/bin
 
 set -x npm_config_prefix $HOME/.node_modules
 
