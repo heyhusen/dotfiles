@@ -7,6 +7,9 @@ end
 -- Map leader to space
 vim.g.mapleader = ' '
 
+-- save
+map('n', '<Leader><Leader>', ':<c-u>update<cr>')
+
 -- nvim-tree
 map('n', '<C-b>', ':NvimTreeToggle<CR>')
 
@@ -19,8 +22,13 @@ map('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
 map('n', '<C-p>', '<cmd>Telescope git_files<cr>')
 
 -- nvim-bufferline
-map('n', '<silent>[b', ':BufferLineCycleNext<CR>')
-map('n', '<silent>b]', ':BufferLineCyclePrev<CR>')
+map('n', '[b', ':BufferLineCycleNext<CR>')
+map('n', 'b]', ':BufferLineCyclePrev<CR>')
 
 -- glow-nvim
 map('n', '<leader>p', ':Glow<CR>')
+
+-- kommentary
+map('n', '<leader>cc', '<Plug>kommentary_line_default')
+map('n', '<leader>c', '<Plug>kommentary_motion_default')
+map('v', '<leader>c', '<Plug>kommentary_visual_default')

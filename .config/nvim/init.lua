@@ -5,6 +5,10 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 end
 
 
+-- Disable default kommentary keybindings
+vim.g.kommentary_create_default_mappings = false
+
+
 -- Install plugins
 require('plugins')
 
