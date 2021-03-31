@@ -21,3 +21,6 @@ map('n', '<C-p>', '<cmd>Telescope git_files<cr>')
 -- nvim-bufferline
 map('n', '<silent>[b', ':BufferLineCycleNext<CR>')
 map('n', '<silent>b]', ':BufferLineCyclePrev<CR>')
+
+-- glow-nvim
+map('n', '<leader>p', ':Glow<CR>')
