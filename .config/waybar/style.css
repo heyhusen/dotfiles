@@ -41,21 +41,21 @@ window#waybar.chromium {
 }
 
 window#waybar .modules-left {
-		margin-right: 5px;
+    margin-right: 5px;
 }
 
 window#waybar .modules-center {
-		margin: 0 5px;
-		font-size: 11px;
-		color: @nord6;
+    margin: 0 5px;
+    font-size: 11px;
+    color: @nord6;
 }
 
 window#waybar .modules-right {
-		margin-left: 5px;
+    margin-left: 5px;
 }
 
 #workspaces {
-		margin: 0 0 0 10px;
+    margin: 0 0 0 10px;
 }
 
 #workspaces button {
@@ -85,7 +85,7 @@ window#waybar .modules-right {
 }
 
 #tray {
-		margin-right: 10px;
+    margin-right: 10px;
 }
 
 #clock,
@@ -99,33 +99,33 @@ window#waybar .modules-right {
 #mode,
 #idle_inhibitor,
 #mpd {
-		background: @nord1;
+    background: @nord1;
     color: @nord4;
-		padding: 0 7px;
+    padding: 0 7px;
 }
 
 #pulseaudio {
-		padding-left: 7px;
+    padding-left: 7px;
 }
 
 #backlight {
-		padding-right: 10px;
-		border-radius: 0 10px 10px 0;
+    padding-right: 10px;
+    border-radius: 0 10px 10px 0;
 }
 
-#network {
-		padding-left: 10px;
-		border-radius: 10px 0 0 10px;
+#idle_inhibitor {
+    padding-left: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 #clock {
-		padding-right: 7px;
+    padding-right: 7px;
 }
 
 #custom-media {
-		font-size: 11px;
-		padding: 0 7px;
-		color: shade(@nord14, 1.25);
+    font-size: 11px;
+    padding: 0 7px;
+    color: shade(@nord14, 1.25);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -181,13 +181,8 @@ label:focus {
     color: @nord11;
 }
 
-#idle_inhibitor {
-    background-color: #2d3436;
-}
-
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    color: @nord13;
 }
 
 #mpd {

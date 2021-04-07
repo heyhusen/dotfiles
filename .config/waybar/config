@@ -4,10 +4,10 @@
     "height": 25, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "margin": "5 5 0 5",
-		// Choose the order of the modules
+    // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "pulseaudio", "backlight", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "network", "cpu", "memory", "temperature", "battery", "battery#bat2", "clock"],
+    "modules-right": ["tray", "idle_inhibitor", "network", "cpu", "memory", "temperature", "battery", "battery#bat2", "clock"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -53,17 +53,17 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
-		"custom/media": {
-				"format": "{icon}{}",
-				"return-type": "json",
-				"format-icons": {
-						"Playing": " ",
-						"Paused": " ",
-				},
-				"max-length":70,
-				"exec": "playerctl metadata --format '{\"text\": \"{{title}}\", \"tooltip\": \"{{playerName}} : {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-				"on-click": "playerctl play-pause",
-		},
+    "custom/media": {
+	"format": "{icon}{}",
+	"return-type": "json",
+	"format-icons": {
+	    "Playing": " ",
+	    "Paused": " ",
+	},
+	"max-length":70,
+	"exec": "playerctl metadata --format '{\"text\": \"{{title}}\", \"tooltip\": \"{{playerName}} : {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+	"on-click": "playerctl play-pause",
+    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
