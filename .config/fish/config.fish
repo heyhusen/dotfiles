@@ -3,12 +3,12 @@ set -U fish_greeting
 
 
 # Set PATH
-set -x GOROOT /usr/lib/go
-set -x GOPATH $HOME/go
-
-set -x PATH $PATH $GOROOT/bin $GOPATH/bin $HOME/.node_modules/bin $HOME/.config/composer/vendor/bin
-
 set -x npm_config_prefix $HOME/.node_modules
+
+set -x GOROOT /usr/lib/go
+set -x GOPATH $HOME/.go
+
+set -x PATH $PATH $GOROOT/bin $GOPATH/bin $npm_config_prefix/bin $HOME/.config/composer/vendor/bin $HOME/.local/bin
 
 # Set fish shell
 set -g fish_prompt_pwd_dir_length 0
