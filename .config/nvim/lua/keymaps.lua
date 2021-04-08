@@ -22,8 +22,9 @@ map('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
 map('n', '<C-p>', '<cmd>Telescope git_files<cr>')
 
 -- nvim-bufferline
-map('n', '[b', ':BufferLineCycleNext<CR>')
-map('n', 'b]', ':BufferLineCyclePrev<CR>')
+map('n', '<C-PageUp>', ':BufferLineCycleNext<CR>')
+map('n', '<C-PageDown>', ':BufferLineCyclePrev<CR>')
+map('n', '<C-w>', ':bdelete<CR>')
 
 -- glow-nvim
 map('n', '<leader>p', ':Glow<CR>')
