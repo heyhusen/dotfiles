@@ -3,6 +3,7 @@ local condition = require 'galaxyline.condition'
 local devicons = require 'nvim-web-devicons'
 local fileinfo = require 'galaxyline.provider_fileinfo'
 local gl = require 'galaxyline'
+local nonicons = require "nvim-nonicons"
 local utils = require 'utils'
 
 local gls = gl.section
@@ -57,8 +58,8 @@ gls.left = {
 	ViMode = {
             provider = function()
                 local modehl = mode_hl()
-                highlight('GalaxyViMode', cl.nord3, modehl, 'bold')
-                highlight('GalaxyViModeInv', modehl, cl.nord3, 'bold')
+                highlight('GalaxyViMode', cl.nord2, modehl, 'bold')
+                highlight('GalaxyViModeInv', modehl, cl.nord2, 'bold')
                 return string.format('  %s ', mode_label())
             end,
             separator = sep.left_filled,
@@ -72,7 +73,7 @@ gls.left = {
                 local icon, iconhl = devicons.get_icon(fname, ext)
                 if icon == nil then return '' end
                 local fg = vim.fn.synIDattr(vim.fn.hlID(iconhl), 'fg')
-                highlight('GalaxyFileIcon', fg, cl.nord3)
+                highlight('GalaxyFileIcon', fg, cl.nord2)
                 return ' ' .. icon .. ' '
             end,
             condition = condition.buffer_not_empty,
@@ -81,25 +82,25 @@ gls.left = {
     {
 	FileName = {
             provider = {'FileName','FileSize'}, 
-	    highlight = {cl.nord4, cl.nord3},
+	    highlight = {cl.nord4, cl.nord2},
             separator = sep.left,
             separator_highlight = 'GalaxyViModeInv',
         }
     },
     {
 	GitIcon = {
-	    provider = function() return ' ' .. devicons.get_icon('GitLogo', 'git') .. ' ' end,
+	    provider = function() return '  ' end,
 	    condition = condition.check_git_workspace,
 	    separator = '',
-	    separator_highlight = {'NONE', cl.nord3},
-	    highlight = {cl.nord15,cl.nord3, 'bold'},
+	    separator_highlight = {'NONE', cl.nord2},
+	    highlight = {cl.nord12,cl.nord2, 'bold'},
 	}
     },
     {
 	GitBranch = {
 	    provider = 'GitBranch',
 	    condition = condition.check_git_workspace,
-	    highlight = {cl.nord15, cl.nord3, 'bold'},
+	    highlight = {cl.nord12, cl.nord2, 'bold'},
 	},
     },
     {
@@ -107,7 +108,7 @@ gls.left = {
 	    provider = 'DiffAdd',
 	    condition = condition.hide_in_width,
 	    icon = '',
-	    highlight = {cl.nord14, cl.nord3},
+	    highlight = {cl.nord14, cl.nord2},
 	},
     },
     {
@@ -115,7 +116,7 @@ gls.left = {
 	    provider = 'DiffModified',
 	    condition = condition.hide_in_width,
 	    icon = ' 柳',
-	    highlight = {cl.nord12, cl.nord3},
+	    highlight = {cl.nord12, cl.nord2},
 	},
     },
     {
@@ -123,7 +124,7 @@ gls.left = {
 	    provider = 'DiffRemove',
 	    condition = condition.hide_in_width,
 	    icon = '  ',
-	    highlight = {cl.nord11, cl.nord3},
+	    highlight = {cl.nord11, cl.nord2},
 	}
     }
 }
@@ -140,7 +141,7 @@ gls.right = {
                     return ''
                 end
             end,
-            highlight = {cl.nord14, cl.nord3},
+            highlight = {cl.nord14, cl.nord2},
             separator = sep.right,
             separator_highlight = 'GalaxyViModeInv',
         }
@@ -152,7 +153,7 @@ gls.right = {
                 if n == 0 then return '' end
                 return string.format(' %s %d ', icons.lsp_warn, n)
             end,
-            highlight = {'yellow', cl.nord3},
+            highlight = {'yellow', cl.nord2},
         },
     },
     {
@@ -162,7 +163,7 @@ gls.right = {
                 if n == 0 then return '' end
                 return string.format(' %s %d ', icons.lsp_error, n)
             end,
-            highlight = {'red', cl.nord3},
+            highlight = {'red', cl.nord2},
         }
     }, 
     {
@@ -173,7 +174,7 @@ gls.right = {
                 return string.format(' %s %s ', icon, vim.bo.filetype)
             end,
             condition = condition.buffer_not_empty,
-            highlight = {cl.nord4, cl.nord3},
+            highlight = {cl.nord4, cl.nord2},
             separator = sep.right,
             separator_highlight = 'GalaxyViModeInv',
 	}
@@ -208,8 +209,8 @@ gls.right = {
 gls.short_line_left[1] = {
   BufferType = {
     provider = 'FileTypeName',
-    separator = '',
-    separator_highlight = {cl.nord15, cl.nord3},
+    separator = sep.left_filled,
+    separator_highlight = {cl.nord15, cl.nord2},
     highlight = {cl.nord4, cl.nord15}
   }
 }
@@ -217,8 +218,8 @@ gls.short_line_left[1] = {
 gls.short_line_right[1] = {
   BufferIcon = {
     provider= 'BufferIcon',
-    separator = '',
-    separator_highlight = {cl.nord15, cl.nord3},
+    separator = sep.right_filled,
+    separator_highlight = {cl.nord15, cl.nord2},
     highlight = {cl.nord4, cl.nord15}
   }
 }
