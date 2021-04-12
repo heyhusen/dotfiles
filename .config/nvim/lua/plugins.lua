@@ -11,7 +11,7 @@ paq 'nvim-lua/popup.nvim'
 paq 'nvim-lua/plenary.nvim'
 paq 'nvim-telescope/telescope.nvim'
 paq 'akinsho/nvim-bufferline.lua'
--- paq {'glepnir/galaxyline.nvim', branch='main'}
+paq {'glepnir/galaxyline.nvim', branch='main'}
 paq 'editorconfig/editorconfig-vim' --vimscript
 paq 'wfxr/minimap.vim' --vimscript
 paq 'norcalli/nvim-colorizer.lua'
