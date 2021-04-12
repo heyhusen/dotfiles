@@ -3,7 +3,7 @@ local paq = require "paq-nvim".paq
 
 paq {'savq/paq-nvim', opt=true}
 paq {'nvim-treesitter/nvim-treesitter', run=vim.fn[':TSUpdate']}
-paq 'glepnir/zephyr-nvim'
+paq 'Th3Whit3Wolf/one-nvim'
 paq 'kyazdani42/nvim-web-devicons'
 paq 'yamatsum/nvim-web-nonicons'
 paq 'kyazdani42/nvim-tree.lua'
@@ -11,6 +11,7 @@ paq 'nvim-lua/popup.nvim'
 paq 'nvim-lua/plenary.nvim'
 paq 'nvim-telescope/telescope.nvim'
 paq 'akinsho/nvim-bufferline.lua'
+-- paq {'glepnir/galaxyline.nvim', branch='main'}
 paq 'editorconfig/editorconfig-vim' --vimscript
 paq 'wfxr/minimap.vim' --vimscript
 paq 'norcalli/nvim-colorizer.lua'

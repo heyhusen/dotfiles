@@ -60,7 +60,7 @@ opt('o', 'showmode', false)
 opt('o', 'switchbuf', 'usetab,newtab')
 opt('w', 'signcolumn', 'number')
 opt('o', 'termguicolors', true)
-cmd 'colorscheme zephyr'
+cmd 'colorscheme one-nvim'
 
 
 -- Configs
