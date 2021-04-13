@@ -10,6 +10,7 @@ set -x GOPATH $HOME/.go
 
 set -x PATH $PATH $GOROOT/bin $GOPATH/bin $npm_config_prefix/bin $HOME/.config/composer/vendor/bin $HOME/.local/bin
 
+
 # Set fish shell
 set -g fish_prompt_pwd_dir_length 0
 
@@ -25,3 +26,4 @@ set -g theme_display_git_default_branch yes
 
 # GPG TTY
 set -gx GPG_TTY (tty)
+
