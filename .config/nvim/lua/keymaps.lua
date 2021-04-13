@@ -33,3 +33,7 @@ map('n', '<leader>p', ':Glow<CR>')
 map('n', '<leader>cc', '<Plug>kommentary_line_default')
 map('n', '<leader>c', '<Plug>kommentary_motion_default')
 map('v', '<leader>c', '<Plug>kommentary_visual_default')
+
+-- fterm.nvim
+map('n', '<leader>g', '<CMD>lua __fterm_gitui()<CR>', { silent = true })
+
