@@ -42,8 +42,8 @@ output * {
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Nordic-Polar'
-    gsettings set org.gnome.desktop.wm.preferences theme 'Nordic-Polar'
+    gsettings set $gnome-schema gtk-theme 'Nordic'
+    gsettings set org.gnome.desktop.wm.preferences theme 'Nordic'
     gsettings set $gnome-schema icon-theme 'Fluent-orange-dark'
     gsettings set $gnome-schema cursor-theme 'Adwaita'
     gsettings set $gnome-schema font-name 'Noto Sans 9'
@@ -92,10 +92,10 @@ exec swayidle -w \
 # Example configuration:
 #
 input type:touchpad {
-		dwt enabled
-		tap enabled
-		natural_scroll enabled
-		middle_emulation enabled
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
 }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -244,15 +244,15 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-		swaybar_command waybar
+    swaybar_command waybar
 }
 
 #
 # MPRIS controll
 #
-bindsym Mod4+Control+p exec playerctl play-pause
-bindsym Mod4+Control+Left exec playerctl previous
-bindsym Mod4+Control+Right exec playerctl next
+bindsym $mod+Control+p exec playerctl play-pause
+bindsym $mod+Control+Left exec playerctl previous
+bindsym $mod+Control+Right exec playerctl next
 
 #
 # Special keys
