@@ -1,6 +1,6 @@
 # ~/.config/sway
 
-![On the Sway home](/on-the-sway-home.png)
+![On the Sway home](/.config/sway/on-the-sway-home.png)
 
 ## Requirements
 - [Kitty](https://github.com/kovidgoyal/kitty)
