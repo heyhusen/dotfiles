@@ -1,6 +1,7 @@
 # ~/.config/nvim
 
 ## Requirements
+- A terminal with a patched font installed, like [Kitty](/.config/kitty)
 - A C compiler, like [GCC](https://gcc.gnu.org/)
 - [sharkdp/bat](https://github.com/sharkdp/bat)
 - [sharkdp/fd](https://github.com/sharkdp/fd)
@@ -13,5 +14,6 @@ All requirement above can be installed in Arch Linux using [paru](https://github
 paru -S gcc bat fd ripgrep code-minimap-bin glow-bin
 ```
 
-> Before going any further, please setup a terminal with a patched installed first, like [Kitty](/.config/kitty)
+### Additional config
+- [Kitty](/.config/kitty)
 
