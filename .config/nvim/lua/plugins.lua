@@ -19,6 +19,7 @@ paq 'npxbr/glow.nvim'
 paq 'f-person/git-blame.nvim'
 paq 'numtostr/FTerm.nvim'
 paq 'b3nj5m1n/kommentary'
+paq 'glepnir/indent-guides.nvim'
 
 local plugin_path = vim.fn.stdpath("data") .. "/site/pack/paqs"
 if vim.fn.empty(vim.fn.glob(plugin_path)) > 0 then

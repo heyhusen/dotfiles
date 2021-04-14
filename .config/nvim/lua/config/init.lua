@@ -6,4 +6,5 @@ require('config.galaxyline')
 require('config.fterm-nvim')
 require('config.minimap')
 require('config.colorizer')
+require('config.indent-guides')
 
