@@ -1,5 +1,7 @@
 # ~/.config/sway
 
+![On the Sway home](/on-the-sway-home.png)
+
 ## Requirements
 - [Kitty](https://github.com/kovidgoyal/kitty)
 - [wofi](https://github.com/mikn/wofi)
