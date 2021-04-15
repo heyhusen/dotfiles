@@ -1,6 +1,6 @@
 # ~/.config/alacritty
 
-## Requrement
+## Requirement
 
 - A patched JetBrainsMono font
 

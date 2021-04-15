@@ -1,6 +1,6 @@
 # ~/.config/kitty
 
-## Requrement
+## Requirement
 
 - A patched JetBrainsMono font
 
