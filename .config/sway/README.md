@@ -11,10 +11,11 @@
 - [pamixer](https://github.com/cdemoulins/pamixer)
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl)
 - [gammastep](https://gitlab.com/chinstrap/gammastep)
+- [nm-applet](https://wiki.gnome.org/Projects/NetworkManager/)
 
 All requirement above can be installed in Arch Linux using [paru](https://github.com/morganamilo/paru)
 ```bash
-paru -S kitty wofi swaylock-effects waybar playerctl pamixer brightnessctl gammastep
+paru -S kitty wofi swaylock-effects waybar playerctl pamixer brightnessctl gammastep network-manager-applet
 ```
 
 ### Additional config
