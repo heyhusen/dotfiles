@@ -3,3 +3,4 @@
 !Packages/
 Packages/*
 !Packages/User/
+!README.md
