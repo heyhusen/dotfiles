@@ -38,6 +38,7 @@
 		"SublimeLinter-contrib-php-cs-fixer",
 		"SublimeLinter-flake8",
 		"SublimeLinter-golangcilint",
+		"SublimeLinter-json",
 		"Svelte",
 		"Sync Settings",
 		"SyncedSideBar",
