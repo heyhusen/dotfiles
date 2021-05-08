@@ -273,6 +273,9 @@ bindsym XF86Search exec bemenu-run
 
 exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
 
+# kanshi
+exec kanshi
+
 # Gammastep
 exec gammastep-indicator
 
