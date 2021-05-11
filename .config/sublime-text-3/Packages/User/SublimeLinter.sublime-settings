@@ -3,6 +3,7 @@
 	"linters": {
         // The name of the linter you installed
         "phpcsfixer": {
+            "disable": true,
             // Path to the executable to be used. Either a string or an
             // array. E.g. ['nvm', 'exec', '8.6', 'eslint']
             "executable": "${folder}/vendor/bin/php-cs-fixer"
