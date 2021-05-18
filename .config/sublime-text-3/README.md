@@ -10,19 +10,16 @@ Actually, this configuration is for Sublime Text 4.
 - [markdownlint](https://github.com/igorshubovych/markdownlint-cli)
 - [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 - [rust-analyzer](https://rust-analyzer.github.io/)
+- [bashate](https://github.com/openstack/bashate)
 
 Some requirement above can be installed in Arch Linux using [paru](https://github.com/morganamilo/paru)
 ```bash
-paru -S golangci-lint-bin hadolint-bin rust-analyzer
+paru -S golangci-lint-bin hadolint-bin rust-analyzer gopls
 ```
 
 Other requirements can be installed using command bellow.
 ```bash
 pip install flake8 bashate
-```
-
-```bash
-GO111MODULE=on go get golang.org/x/tools/gopls@latest
 ```
 
 ```bash
