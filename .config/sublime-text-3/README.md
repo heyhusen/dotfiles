@@ -18,7 +18,7 @@ paru -S golangci-lint-bin hadolint-bin rust-analyzer
 
 Other requirements can be installed using command bellow.
 ```bash
-pip install flake8
+pip install flake8 bashate
 ```
 
 ```bash
