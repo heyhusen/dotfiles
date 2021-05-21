@@ -1,8 +1,10 @@
 [user]
 	name = Ahmad Husen
-	email = hapakaien@gmail.com
+	email = hi@husen.id
 	signingkey = 154FEA274D347539
 [init]
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[push]
+	followTags = true
