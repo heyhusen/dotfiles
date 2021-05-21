@@ -1,6 +1,6 @@
-# ~/.config/sublime-text-3
+# ~/.config/sublime-text
 
-Actually, this configuration is for Sublime Text 4.
+This configuration is for Sublime Text 4.
 
 ## Requirements
 - [flake8](https://flake8.pycqa.org/)
