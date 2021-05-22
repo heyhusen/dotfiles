@@ -42,10 +42,8 @@
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-json",
 		"Svelte",
-		"Sync Settings",
 		"SyncedSideBar",
 		"Syntax Highlighting for PostCSS",
-		"Tailwind CSS Autocomplete",
 		"Vue Syntax Highlight",
 	],
 }
