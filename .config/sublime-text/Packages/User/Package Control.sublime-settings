@@ -5,9 +5,7 @@
 	],
 	"installed_packages":
 	[
-		"A File Icon",
 		"All Autocomplete",
-		"ayu",
 		"BracketHighlighter",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
@@ -43,6 +41,7 @@
 		"Svelte",
 		"SyncedSideBar",
 		"Syntax Highlighting for PostCSS",
+		"Theme - Monokai Pro",
 		"Vue Syntax Highlight",
 	],
 }
