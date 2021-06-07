@@ -1,13 +1,15 @@
 {
-	"lsp_format_on_save": true,
-	"lsp_code_actions_on_save": {
-	  	"source.fixAll.eslint": true,
-	  	"source.organizeImports": true
-	},
-	"clients": {
-		"gopls": {
+    "lsp_format_on_save": true,
+    "lsp_code_actions_on_save": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "clients": {
+        "gopls": {
             "enabled": true,
-            "command": ["gopls"],
+            "command": [
+                "gopls"
+            ],
             "selector": "source.go",
             "initializationOptions": {
                 "experimentalWorkspaceModule": false
@@ -15,8 +17,10 @@
         },
         "rust-analyzer": {
             "enabled": true,
-            "command": ["rust-analyzer"],
+            "command": [
+                "rust-analyzer"
+            ],
             "selector": "source.rust"
         }
-	}
+    }
 }
