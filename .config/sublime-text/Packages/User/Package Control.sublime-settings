@@ -23,6 +23,7 @@
 		"LSP-json",
 		"LSP-pyright",
 		"LSP-svelte",
+		"LSP-tailwindcss",
 		"LSP-typescript",
 		"LSP-vue",
 		"LSP-yaml",

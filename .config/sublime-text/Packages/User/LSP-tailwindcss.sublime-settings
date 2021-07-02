@@ -1,18 +1,3 @@
 // Settings in here override those in "LSP-tailwindcss/LSP-tailwindcss.sublime-settings"
-
 {
-   "languages": [
-      {
-         "languageId": "html",
-         // ST3
-         "scopes": ["text.html.basic",],
-         "syntaxes": [
-            "Packages/HTML/HTML.sublime-syntax",
-            "Packages/PHP/PHP.sublime-syntax",
-         ],
-         // ST4
-         "document_selector": "text.html.basic | embedding.php | text.blade",
-         "feature_selector": "meta.attribute-with-value.class.html"
-      }
-   ]
 }
