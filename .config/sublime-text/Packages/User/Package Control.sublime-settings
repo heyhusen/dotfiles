@@ -6,11 +6,13 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"ayu",
 		"BracketHighlighter",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
+		"FileIcons",
 		"Git",
 		"JsPrettier",
 		"LSP",
@@ -27,6 +29,7 @@
 		"LSP-typescript",
 		"LSP-vue",
 		"LSP-yaml",
+		"MarkdownPreview",
 		"Package Control",
 		"PhpDoc",
 		"Sass",
@@ -39,10 +42,10 @@
 		"SublimeLinter-golangcilint",
 		"SublimeLinter-json",
 		"SublimeLinter-shellcheck",
+		"SublimeLinter-xmllint",
 		"Svelte",
 		"SyncedSideBar",
 		"Syntax Highlighting for PostCSS",
-		"Theme - Monokai Pro",
 		"Vue Syntax Highlight",
 	],
 }

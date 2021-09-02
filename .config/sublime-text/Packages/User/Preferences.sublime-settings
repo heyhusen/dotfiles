@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro (Filter Octagon).sublime-color-scheme",
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -22,5 +22,5 @@
 	],
 	"rulers": [80, 120],
 	"save_on_focus_lost": true,
-	"theme": "Monokai Pro (Filter Octagon).sublime-theme",
+	"theme": "ayu-mirage.sublime-theme",
 }
