@@ -14,13 +14,6 @@
             "initializationOptions": {
                 "experimentalWorkspaceModule": false
             }
-        },
-        "rust-analyzer": {
-            "enabled": true,
-            "command": [
-                "rust-analyzer"
-            ],
-            "selector": "source.rust"
         }
     }
 }

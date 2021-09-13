@@ -24,6 +24,7 @@
 		"LSP-intelephense",
 		"LSP-json",
 		"LSP-pyright",
+		"LSP-rust-analyzer",
 		"LSP-svelte",
 		"LSP-tailwindcss",
 		"LSP-typescript",
