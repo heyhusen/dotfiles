@@ -1,7 +1,0 @@
-/*
-!.gitignore
-!Packages/
-Packages/*
-!Packages/User/
-Packages/User/SyncSettings.sublime-settings
-!README.md
