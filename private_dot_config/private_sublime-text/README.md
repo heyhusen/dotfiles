@@ -14,12 +14,7 @@ This configuration is for Sublime Text 4.
 
 Some requirement above can be installed in Arch Linux using [paru](https://github.com/morganamilo/paru)
 ```bash
-paru -S golangci-lint-bin hadolint-bin rust-analyzer gopls shellcheck-bin
-```
-
-Other requirements can be installed using command bellow.
-```bash
-pip install flake8
+paru -S golangci-lint-bin hadolint-bin rust-analyzer gopls shellcheck flake8
 ```
 
 ```bash
