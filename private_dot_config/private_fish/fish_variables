@@ -1,8 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export --path GOPATH:/home/hapakaien/\x2ego
-SETUVAR --export GOROOT:/usr/lib/go
-SETUVAR --export --path PATH:/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/usr/lib/go/bin\x1e/home/hapakaien/go/bin\x1e/home/hapakaien/\x2enode_modules/bin\x1e/home/hapakaien/\x2econfig/composer/vendor/bin
+SETUVAR --path GOPATH:/home/hapakaien/\x2ego
+SETUVAR GOROOT:/usr/lib/go
 SETUVAR --export SSH_AGENT_PID:4315
 SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXyW9XX9/agent\x2e4313
 SETUVAR __fish_initialized:3100
@@ -35,3 +34,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_user_paths:/home/hapakaien/\x2elocal/bin\x1e/home/hapakaien/\x2enode_modules/bin\x1e/home/hapakaien/\x2ego/bin\x1e/usr/lib/go/bin
+SETUVAR npm_config_prefix:/home/hapakaien/\x2enode_modules
