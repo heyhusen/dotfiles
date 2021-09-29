@@ -15,15 +15,6 @@ set -x PATH $PATH $GOROOT/bin $GOPATH/bin $npm_config_prefix/bin $HOME/.config/c
 set -g fish_prompt_pwd_dir_length 0
 
 
-# Set bobthefish theme
-set -g theme_color_scheme nord
-set -g theme_date_timezone Asia/Jakarta
-set -g theme_powerline_fonts yes
-set -g theme_display_git yes
-set -g theme_newline_cursor clean
-set -g theme_display_git_default_branch yes
-
-
 # GPG TTY
 set -gx GPG_TTY (tty)
 
