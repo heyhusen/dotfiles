@@ -3,12 +3,12 @@ set -U fish_greeting
 
 
 # Set PATH
-set -gx npm_config_prefix $HOME/.node_modules
+# set -gx npm_config_prefix $HOME/.node_modules
 
-set -gx GOROOT /usr/lib/go
-set -gx GOPATH $HOME/.go
+# set -gx GOROOT /usr/lib/go
+# set -gx GOPATH $HOME/.go
 
-set -gx PATH $PATH $GOROOT/bin $GOPATH/bin $npm_config_prefix/bin $HOME/.config/composer/vendor/bin $HOME/.local/bin
+# set -gx PATH $PATH $GOROOT/bin $GOPATH/bin $npm_config_prefix/bin $HOME/.config/composer/vendor/bin $HOME/.local/bin
 
 
 # Set fish shell
