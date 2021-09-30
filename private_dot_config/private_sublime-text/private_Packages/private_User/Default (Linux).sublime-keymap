@@ -1,5 +1,26 @@
 [
-	{ "keys": ["ctrl+b"], "command": "toggle_side_bar" },
-	{ "keys": ["ctrl+alt+l"], "command": "sublime_linter_lint" },
-	{ "keys": ["ctrl+alt+f"], "command": "js_prettier" }
+	{
+		"keys": [
+			"ctrl+b"
+		],
+		"command": "toggle_side_bar"
+	},
+	{
+		"keys": [
+			"ctrl+alt+l"
+		],
+		"command": "sublime_linter_lint"
+	},
+	{
+		"keys": [
+			"ctrl+alt+f"
+		],
+		"command": "js_prettier"
+	},
+	{
+		"keys": [
+			"alt+`"
+		],
+		"command": "toggle_terminus_panel"
+	}
 ]
