@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --path GOPATH:/home/hapakaien/\x2ego
+SETUVAR --export --path GOPATH:/home/hapakaien/\x2ego
 SETUVAR GOROOT:/usr/lib/go
 SETUVAR --export SSH_AGENT_PID:4315
 SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXyW9XX9/agent\x2e4313
