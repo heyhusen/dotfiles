@@ -4,16 +4,5 @@
         "source.fixAll": true,
         "source.organizeImports": true
     },
-    "clients": {
-        "gopls": {
-            "enabled": true,
-            "command": [
-                "gopls"
-            ],
-            "selector": "source.go",
-            "initializationOptions": {
-                "experimentalWorkspaceModule": false
-            }
-        }
-    }
+    "clients": {}
 }
