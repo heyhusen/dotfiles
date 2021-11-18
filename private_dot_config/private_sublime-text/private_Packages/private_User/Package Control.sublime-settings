@@ -6,6 +6,8 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Astro",
+		"Autoprefixer",
 		"ayu",
 		"BracketHighlighter",
 		"DocBlockr",
