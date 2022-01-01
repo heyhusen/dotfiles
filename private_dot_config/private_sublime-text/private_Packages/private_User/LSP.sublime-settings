@@ -4,5 +4,14 @@
         "source.fixAll": true,
         "source.organizeImports": true
     },
-    "clients": {}
+    "clients": {
+        "prisma-language-server": {
+            "enabled": true,
+            "command": [
+                "prisma-language-server",
+                "--stdio"
+            ],
+            "selector": "source.prisma"
+        }
+    }
 }
