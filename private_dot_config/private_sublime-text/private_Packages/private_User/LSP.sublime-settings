@@ -3,15 +3,5 @@
     "lsp_code_actions_on_save": {
         "source.fixAll": true,
         "source.organizeImports": true
-    },
-    "clients": {
-        "prisma-language-server": {
-            "enabled": true,
-            "command": [
-                "prisma-language-server",
-                "--stdio"
-            ],
-            "selector": "source.prisma"
-        }
     }
 }

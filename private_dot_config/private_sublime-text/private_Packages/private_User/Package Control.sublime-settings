@@ -27,6 +27,7 @@
 		"LSP-intelephense",
 		"LSP-json",
 		"LSP-lemminx",
+		"LSP-prisma",
 		"LSP-pyright",
 		"LSP-rust-analyzer",
 		"LSP-svelte",
