@@ -1,5 +1,5 @@
 theme = "bogster"
 
-[lsp]
+[editor.lsp]
 display-messages = true
 
