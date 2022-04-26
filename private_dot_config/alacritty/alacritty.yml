@@ -1,6 +1,9 @@
 env:
   TERM: alacritty
 
+window:
+  transparent: 0.7
+
 font:
   normal:
     family: JetBrainsMono Nerd Font Mono
