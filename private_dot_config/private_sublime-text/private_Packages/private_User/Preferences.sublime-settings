@@ -1,7 +1,6 @@
 {
 	"color_scheme": "ayu-mirage.sublime-color-scheme",
-	"folder_exclude_patterns":
-	[
+	"folder_exclude_patterns": [
 		".svn",
 		".git",
 		".hg",
@@ -10,17 +9,18 @@
 		"vendor"
 	],
 	"font_face": "JetBrainsMono Nerd Font Mono",
-	"font_options":
-	[
+	"font_options": [
 		"subpixel_antialias",
 		"gray_antialias"
 	],
 	"font_size": 8.5,
-	"ignored_packages":
-	[
+	"ignored_packages": [
 		"Vintage",
 	],
-	"rulers": [80, 120],
+	"rulers": [
+		80,
+		120
+	],
 	"save_on_focus_lost": true,
 	"theme": "ayu-mirage.sublime-theme",
 }
