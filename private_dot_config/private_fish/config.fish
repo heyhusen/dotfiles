@@ -15,3 +15,8 @@ set -gx GPG_TTY (tty)
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
 starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/hapakaien/.local/share/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
