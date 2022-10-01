@@ -1,39 +1,64 @@
-local function map(mode, lhs, rhs, opts)
-  local options = {noremap = true}
-  if opts then options = vim.tbl_extend('force', options, opts) end
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
-
 -- Map leader to space
 vim.g.mapleader = ' '
 
--- save
-map('n', '<Leader><Leader>', ':<c-u>update<cr>')
+local function map(mode, lhs, rhs, opts)
+  local options = { noremap = true, silent = true }
+  if opts then
+    options = vim.tbl_extend('force', options, opts)
+  end
+  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+end
 
--- nvim-tree
-map('n', '<C-b>', ':NvimTreeToggle<CR>')
+-- Disable arrow keys
+map('', '<up>', '<nop>')
+map('', '<down>', '<nop>')
+map('', '<left>', '<nop>')
+map('', '<right>', '<nop>')
 
--- telescope.nvim
-map('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
-map('n', '<leader>fg', '<cmd>Telescope git_files<cr>')
-map('n', '<leader>fl', '<cmd>Telescope live_grep<cr>')
-map('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
-map('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
-map('n', '<C-p>', '<cmd>Telescope git_files<cr>')
+-- Reload configuration without restart nvim
+map('n', '<leader>r', ':so %<CR>')
 
--- nvim-bufferline
-map('n', '<C-PageUp>', ':BufferLineCycleNext<CR>')
-map('n', '<C-PageDown>', ':BufferLineCyclePrev<CR>')
-map('n', '<C-w>', ':bdelete<CR>')
+-- Move around splits using Ctrl + {h,j,k,l}
+map('n', '<C-h>', '<C-w>h')
+map('n', '<C-j>', '<C-w>j')
+map('n', '<C-k>', '<C-w>k')
+map('n', '<C-l>', '<C-w>l')
 
--- glow-nvim
-map('n', '<leader>p', ':Glow<CR>')
+-- Buffer
+map('n', '<CA-k>', ':bnext<CR>')
+map('n', '<CA-j>', ':bprevious<CR>')
+map('n', '<CA-w>', ':bdelete<CR>')
 
--- kommentary
-map('n', '<leader>cc', '<Plug>kommentary_line_default')
-map('n', '<leader>c', '<Plug>kommentary_motion_default')
-map('v', '<leader>c', '<Plug>kommentary_visual_default')
+-- Fast saving with <leader> and s
+map('n', '<leader>s', ':w<CR>')
 
--- fterm.nvim
-map('n', '<leader>g', '<CMD>lua __fterm_gitui()<CR>', { silent = true })
+-- Close all windows and exit from Neovim with <leader> and q
+map('n', '<leader>q', ':qa!<CR>')
+
+-----------------------------------------------------------------------------
+-- Plugins
+-----------------------------------------------------------------------------
+
+-- Packer
+map('n', '<leader>u', '<cmd>lua require("packer").sync()<CR>')
+
+-- NvimTree
+map('n', '<leader>fe', ':NvimTreeFindFileToggle<CR>')	    -- Toggle
+map('n', '<leader>fr', ':NvimTreeRefresh<CR>')		    -- Refresh
+
+-- Telescope
+map('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<CR>')
+map('n', '<leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<CR>')
+map('n', '<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<CR>')
+map('n', '<leader>fh', '<cmd>lua require("telescope.builtin").help_tags()<CR>')
+
+-- Gitui
+map('n', '<leader>g', '<CMD>lua __fterm_gitui()<CR>')
+
+-- Trouble
+map('n', '<leader>xx', '<cmd>TroubleToggle<CR>')
+map('n', '<leader>xw', '<cmd>TroubleToggle workspace_diagnostics<CR>')
+map('n', '<leader>xd', '<cmd>TroubleToggle document_diagnostics<CR>')
+map('n', '<leader>xl', '<cmd>TroubleToggle loclist<CR>')
+map('n', '<leader>xq', '<cmd>TroubleToggle quickfix<CR>')
 

@@ -1,8 +1,11 @@
-local cmd = vim.cmd
+local nvim_tree = require('nvim-tree')
 
-cmd('let g:nvim_tree_ignore = [ ".git", "node_modules", ".cache" ]')
-cmd('let g:nvim_tree_auto_close = 1')
-cmd('let g:nvim_tree_quit_on_open = 1')
-cmd('let g:nvim_tree_follow = 1')
-cmd('let g:nvim_tree_git_hl = 1')
+nvim_tree.setup({
+--  open_on_setup = false,
+  ignore_ft_on_setup = {
+    'startify',
+    'dashboard',
+    'alpha',
+  },
+})
 
