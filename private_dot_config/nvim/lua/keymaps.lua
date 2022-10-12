@@ -29,6 +29,9 @@ map('n', '<CA-k>', ':bnext<CR>')
 map('n', '<CA-j>', ':bprevious<CR>')
 map('n', '<CA-w>', ':bdelete<CR>')
 
+-- LSP
+map('n', 'ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
+
 -- Fast saving with <leader> and s
 map('n', '<leader>s', ':w<CR>')
 
