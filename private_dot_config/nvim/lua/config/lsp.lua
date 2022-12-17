@@ -62,7 +62,7 @@ vim.diagnostic.config({
 -- Add additional capabilities supported by nvim-cmp
 -- See: https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp_lsp.update_capabilities(capabilities)
+capabilities = cmp_lsp.default_capabilities(capabilities)
 
 capabilities.textDocument.completion.completionItem.documentationFormat = {
   'markdown',
@@ -130,6 +130,7 @@ end
 
 -- Call setup
 for _, server in ipairs(servers) do
+  -- Lua
   lsp[server].setup {
     on_attach = on_attach,
     capabilities = capabilities,
