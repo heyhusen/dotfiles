@@ -20,7 +20,3 @@ mode.select = "SELECT"
 [editor.cursor-shape]
 insert = "bar"
 
-[[languages]]
-name = "go"
-auto-format = true
-formatter = { command = "goimports" }
