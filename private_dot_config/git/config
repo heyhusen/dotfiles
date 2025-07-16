@@ -6,5 +6,7 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[tag]
+	gpgSign = true
 [push]
 	followTags = true
