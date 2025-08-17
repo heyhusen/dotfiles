@@ -21,13 +21,11 @@
     "show": "always"
   },
   "ui_font_family": "Noto Sans",
-  "indent_guides": {
-    "coloring": "indent_aware"
-  },
   "preferred_line_length": 80,
   "terminal": {
     "dock": "right",
     "font_family": "JetBrainsMono Nerd Font",
     "font_size": 13
-  }
+  },
+  "wrap_guides": [80, 120]
 }
