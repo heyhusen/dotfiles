@@ -6,6 +6,7 @@ color-modes = true
 cursorline = true
 bufferline = "multiple"
 editor-config = true
+rulers = [80, 120]
 
 [editor.lsp]
 display-messages = true
@@ -21,3 +22,5 @@ mode.select = "SELECT"
 [editor.cursor-shape]
 insert = "bar"
 
+[editor.file-picker]
+hidden = false
