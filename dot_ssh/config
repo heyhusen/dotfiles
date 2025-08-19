@@ -15,4 +15,3 @@ Host gitlab.com
 
 Host *
     AddKeysToAgent yes
-
