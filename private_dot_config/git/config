@@ -1,7 +1,7 @@
 [user]
 	name = Husen
 	email = hi@husen.id
-	signingkey = 154FEA274D347539
+	signingkey = /var/home/husen/.ssh/git.pub
 [init]
 	defaultBranch = main
 [commit]
@@ -10,3 +10,5 @@
 	gpgSign = true
 [push]
 	followTags = true
+[gpg]
+	format = ssh
