@@ -1,7 +1,7 @@
 [user]
 	name = Husen
 	email = hi@husen.id
-	signingkey = /var/home/husen/.ssh/git.pub
+	signingkey = ~/.ssh/git.pub
 [init]
 	defaultBranch = main
 [commit]
