@@ -16,3 +16,4 @@ set -gx GPG_TTY (tty)
 
 zoxide init fish | source
 starship init fish | source
+mise activate fish | source
