@@ -44,3 +44,4 @@
 
 theme = tokyonight
 font-size = 10
+background-opacity = 0.8
