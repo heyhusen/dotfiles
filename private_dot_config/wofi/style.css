@@ -1,31 +1,23 @@
-/* base16-wofi (https://sr.ht/~knezi/base16-wofi)
- * Base16 wofi template by knezi
- * Nord scheme by arcticicestudio */
-
 window {
-	background-color: #2E3440;
-	color: #E5E9F0;
-}
-
-#entry:nth-child(odd) {
-	background-color: #2E3440;
-}
-
-#entry:nth-child(even) {
-	background-color: #3B4252;
+	background-color: #1a1b26;
+	color: #9aa5ce;
+	border: 1px solid #9aa5ce;
+	opacity: 0.8;
+	font-family: "Noto Sans", sans-serif;
 }
 
 #entry:selected {
-	background-color: #434C5E;
+	font-weight: bold;
+	opacity: 0.9;
 }
 
 #input {
-	background-color: #3B4252;
-	color: #D8DEE9;
-	border-color: #434C5E; 
+	background-color: #24283b;
+	color: #565f89;
 }
 
 #input:focus {
-	border-color: #EBCB8B; 
+	border-color: #EBCB8B;
+	opacity: 0.9;
 }
 
