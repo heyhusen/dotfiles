@@ -3,6 +3,7 @@ window {
   border-radius: 0.5em;
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1.875em;
+	overflow: hidden;
 }
 
 #input {
@@ -11,6 +12,10 @@ window {
   background-color: #24283b;
   color: #9aa5ce;
   border: none;
+}
+
+#input:focus {
+	outline: none;
 }
 
 #text {
