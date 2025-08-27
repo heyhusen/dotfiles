@@ -29,6 +29,7 @@ window {
 #entry:selected {
   background-color: rgba(26, 27, 38, 0.9);
   border: none;
+  outline: none;
 } 
 
 #text:selected {
