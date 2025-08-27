@@ -3,3 +3,4 @@ no_actions=true
 prompt=Search...
 term=ghostty
 image_size=60
+width=40%
