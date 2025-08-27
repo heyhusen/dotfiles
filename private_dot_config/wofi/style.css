@@ -1,21 +1,31 @@
 window {
-	background-color: #1a1b26;
-	color: #9aa5ce;
-	border: 1px solid #9aa5ce;
+  background-color: rgba(26, 27, 38, 0.8);
+  border-radius: 0.5em;
 	font-family: "Noto Sans", sans-serif;
 }
 
-#entry:selected {
-	font-weight: bold;
-}
-
 #input {
-	background-color: #24283b;
-	color: #565f89;
-	border-radius: none;
+  padding: 0.7em;
+  border-radius: 0.5em 0.5em 0 0;
+  background-color: #2d2e40;
+  color: #c0caf5;
+  border: none;
 }
 
-#input:focus {
-	border-color: #EBCB8B;
+#text {
+  color: #c0caf5;
 }
 
+#entry {
+  padding: 0.7em;
+  color: #c0caf5;
+}
+
+#entry:selected {
+  background-color: #7aa2f7;
+} 
+
+#text:selected {
+  color: #eee;
+  font-weight: bold;
+}
