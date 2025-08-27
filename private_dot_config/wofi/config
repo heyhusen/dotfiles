@@ -2,6 +2,4 @@ allow_images=true
 no_actions=true
 prompt=Search...
 term=ghostty
-image_size=40
-width=300
-
+image_size=60
