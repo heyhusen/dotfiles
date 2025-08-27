@@ -2,22 +2,20 @@ window {
 	background-color: #1a1b26;
 	color: #9aa5ce;
 	border: 1px solid #9aa5ce;
-	opacity: 0.8;
 	font-family: "Noto Sans", sans-serif;
 }
 
 #entry:selected {
 	font-weight: bold;
-	opacity: 0.9;
 }
 
 #input {
 	background-color: #24283b;
 	color: #565f89;
+	border-radius: none;
 }
 
 #input:focus {
 	border-color: #EBCB8B;
-	opacity: 0.9;
 }
 
