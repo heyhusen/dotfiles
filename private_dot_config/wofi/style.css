@@ -12,10 +12,12 @@ window {
   background-color: #24283b;
   color: #9aa5ce;
   border: none;
+  outline: none;
 }
 
 #input:focus {
 	outline: none;
+	border: none;
 }
 
 #text {
