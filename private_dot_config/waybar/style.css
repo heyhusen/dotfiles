@@ -34,7 +34,8 @@
 #battery,
 #network,
 #bluetooth,
-#pulseaudio {
+#pulseaudio,
+#custom-notification {
     min-width: 12px;
     margin: 0 7.5px;
 }
