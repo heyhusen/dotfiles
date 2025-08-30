@@ -21,9 +21,9 @@
   "timeout-critical": 0,
   "fit-to-screen": false,
   "relative-timestamps": true,
-  "control-center-width": 500,
-  "control-center-height": 600,
-  "notification-window-width": 500,
+  "control-center-width": 450,
+  "control-center-height": 900,
+  "notification-window-width": 450,
   "keyboard-shortcuts": true,
   "notification-grouping": true,
   "image-visibility": "when-available",
@@ -51,11 +51,13 @@
     }
   },
   "widgets": [
-    "mpris",
-    "inhibitors",
-    "title",
     "dnd",
-    "notifications"
+    "mpris",
+    "volume",
+    "backlight",
+    "notifications",
+    "inhibitors",
+    "title"
   ],
   "widget-config": {
     "inhibitors": {
@@ -80,8 +82,8 @@
       "autohide": false,
       "show-album-art": "always",
       "loop-carousel": false,
-      "image-size": 96,
-      "image-radius": 7
+      "image-size": 60,
+      "image-radius": 5
     },
     "buttons-grid": {
       "buttons-per-row": 7,
@@ -94,6 +96,13 @@
           "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
         }
       ]
+    },
+    "volume": {
+      "label": ""
+    },
+    "backlight": {
+      "label": "󰃟",
+      "device": "amdgpu_bl1"
     }
   }
 }
