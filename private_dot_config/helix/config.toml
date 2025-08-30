@@ -25,6 +25,9 @@ insert = "bar"
 [editor.file-picker]
 hidden = false
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 C-g = [
     ":write-all",
