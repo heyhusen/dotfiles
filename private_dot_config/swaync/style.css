@@ -227,6 +227,7 @@ scrollbar trough {
   background: #24283b;
   border-radius: 10px;
   color: #cdd6f4;
+  margin: 0 0 20px 0;
 }
 
 .mpris-overlay {
@@ -304,7 +305,7 @@ scrollbar trough {
 
 .widget-volume {
   padding: 0;
-  margin: 35px 0 10px 0;
+  margin: 10px 0;
 }
 
 .widget-volume label {
