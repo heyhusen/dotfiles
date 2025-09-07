@@ -7,6 +7,7 @@ cursorline = true
 bufferline = "multiple"
 editor-config = true
 rulers = [80, 120]
+mouse = false
 
 [editor.lsp]
 display-messages = true
@@ -27,6 +28,12 @@ hidden = false
 
 [editor.soft-wrap]
 enable = true
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.whitespace]
+render = "all"
 
 [keys.normal]
 C-g = [
