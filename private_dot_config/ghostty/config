@@ -42,6 +42,6 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = tokyonight
+theme = TokyoNight
 font-size = 10
 background-opacity = 0.95
