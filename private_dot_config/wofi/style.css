@@ -8,6 +8,7 @@ window {
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1.25em;
 	overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #414868;
 }
 
 #input {
@@ -38,7 +39,7 @@ window {
 }
 
 #entry:selected {
-  background-color: rgba(26, 27, 38, 0.9);
+  background-color: transparent;
   border: none;
   outline: none;
 } 
