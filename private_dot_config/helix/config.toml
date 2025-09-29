@@ -35,15 +35,13 @@ focus-lost = true
 [editor.whitespace]
 render = "all"
 
-[keys.normal]
-C-g = [
+[keys.normal.space]
+v = [
     ":write-all",
     ":insert-output lazygit >/dev/tty",
     ":redraw",
     ":reload-all"
 ]
-
-[keys.normal.space]
 e = [
       ":sh rm -f /tmp/unique-file-h21a434",
       ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/unique-file-h21a434",
