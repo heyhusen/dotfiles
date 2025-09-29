@@ -15,5 +15,9 @@ zoxide init fish | source
 starship init fish | source
 mise activate fish | source
 
+if status is-interactive
+    eval (zellij setup --generate-auto-start fish | string collect)
+end
+
 # Set default editor
 set -gx EDITOR hx
