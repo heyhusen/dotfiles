@@ -95,7 +95,8 @@
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 12,
+    "spacing": 15,
+    "reverse-direction": true,
   },
   "custom/notification": {
     "tooltip": false,
