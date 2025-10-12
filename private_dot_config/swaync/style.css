@@ -41,7 +41,7 @@ trough {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #414868;
   border-radius: 10px;
   margin: 10px;
-  background: rgba(26, 27, 38, 0.95);
+  background: rgba(26, 27, 38, 1);
   color: #a9b1d6;
   padding: 0;
 }
@@ -137,7 +137,7 @@ trough {
 .control-center {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #414868;
   border-radius: 10px;
-  background-color: rgba(26, 27, 38, 0.95);
+  background-color: rgba(26, 27, 38, 1);
   color: #a9b1d6;
   padding: 14px;
 }
