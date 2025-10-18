@@ -9,7 +9,7 @@
     "tray",
     "custom/notification",
     "bluetooth",
-    "network",
+    // "network",
     "pulseaudio",
     "cpu",
     "battery",
