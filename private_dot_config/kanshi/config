@@ -1,8 +1,22 @@
-profile {
-    output eDP-1 enable mode 1366x768 position 0,0
+output "AU Optronics 0x459D Unknown" {
+  mode 1920x1200@60
+  position 0,0
+  scale 1
+  alias $PERSONAL_INTERNAL
 }
 
-profile {
-    output eDP-1 disable
-    output HDMI-A-1 mode 1920x1080 position 0,0
+output "SKYDATA S.P.A. H24G30Q Unknown" {
+  mode 2560x1440@60
+  position 0,0
+  scale 1
+  alias $PERSONAL_EXTERNAL
+}
+
+profile personal {
+    output $PERSONAL_INTERNAL enable
+}
+
+profile personal_docked {
+    output $PERSONAL_INTERNAL disable
+    output $PERSONAL_EXTERNAL enable
 }
