@@ -23,4 +23,5 @@
 	],
 	"save_on_focus_lost": true,
 	"theme": "ayu-mirage.sublime-theme",
+	"index_files": false,
 }
