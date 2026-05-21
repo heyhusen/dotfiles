@@ -7,25 +7,55 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "openrouter",
+      "model": "minimax/minimax-m2.5:free",
+      "enable_thinking": true,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+    },
+  },
   "ui_font_size": 16,
   "buffer_font_size": 13,
   "theme": "Tokyo Night",
   "icon_theme": "Catppuccin Mocha",
   "auto_install_extensions": {
     "tokyo-night": true,
-    "catppuccin-icons": true
+    "catppuccin-icons": true,
   },
   "autosave": "on_focus_change",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "minimap": {
-    "show": "always"
+    "show": "always",
   },
   "ui_font_family": "Noto Sans",
   "preferred_line_length": 80,
   "terminal": {
     "dock": "right",
     "font_family": "JetBrainsMono Nerd Font",
-    "font_size": 13
+    "font_size": 13,
   },
-  "wrap_guides": [80, 120]
+  "wrap_guides": [80, 120],
+  "soft_wrap": "editor_width",
 }
