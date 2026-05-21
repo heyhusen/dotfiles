@@ -12,3 +12,5 @@
 	followTags = true
 [gpg]
 	format = ssh
+[includeIf "gitdir:~/Projects/eigen/"]
+    path = ~/Projects/eigen/.gitconfig
